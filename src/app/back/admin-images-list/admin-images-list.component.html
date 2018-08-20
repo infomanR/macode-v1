@@ -1,0 +1,21 @@
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Título</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let image of images | async">
+        <td><img src="{{image.thumbnail}}" class="img-responsive"></td>
+        <td>{{image.title}}</td>
+        <td>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
